@@ -80,6 +80,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="Views\AddHoursEntryView.cs" />
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Views\CreateNewJobView.cs" />
     <Compile Include="Views\EnterTimeView.cs" />

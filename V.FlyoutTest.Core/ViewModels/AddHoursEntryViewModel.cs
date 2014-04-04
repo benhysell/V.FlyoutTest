@@ -1,21 +1,14 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <summary>
-//    Defines the EnterTimeViewModel type.
+//    Defines the AddHoursEntryViewModel type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 namespace V.FlyoutTest.Core.ViewModels
 {
     /// <summary>
-    /// Define the EnterTimeViewModel type.
+    /// Define the AddHoursEntryViewModel type.
     /// </summary>
-    public class EnterTimeViewModel : BaseViewModel
+    public class AddHoursEntryViewModel : BaseViewModel
     {
-        /// <summary>
-        /// Example of showing the next view
-        /// </summary>
-        public void ShowFirstView()
-        {
-            this.ShowViewModel<AddHoursEntryViewModel>();
-        }
     }
 }

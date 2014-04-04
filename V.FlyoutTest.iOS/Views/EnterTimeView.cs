@@ -20,22 +20,7 @@ namespace V.FlyoutTest.iOS.Views
     /// </summary>
     [Register("EnterTimeView")]
     public class EnterTimeView : BaseView
-    {
-        public EnterTimeView()
-        {            
-            this.NavigationItem.LeftBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Pause,
-                                                                         (delegate
-                                                                         {
-                                                                             var messenger = Mvx.Resolve<IMvxMessenger>();
-                                                                             messenger.Publish(new Message(this));                                                                             
-                                                                         }));
-            this.NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Save, (delegate
-            {                
-                var viewmodel = ViewModel as EnterTimeViewModel;
-                viewmodel.ShowFirstView();                
-            }));
-            
-        }
+    {        
         /// <summary>
         /// Views the did load.
         /// </summary>
@@ -43,13 +28,27 @@ namespace V.FlyoutTest.iOS.Views
         /// Called when the View is first loaded
         /// </summary>
         public override void ViewDidLoad()
-        {            
-            this.View = new UIView { BackgroundColor = UIColor.Blue };
+        {
+            View = new UIView { BackgroundColor = UIColor.Blue };
 
             base.ViewDidLoad();
             Title = "Enter Time";
+            NavigationItem.LeftBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Pause,
+                                                                         (delegate
+                                                                         {
+                                                                             //message to show the menu
+                                                                             var messenger = Mvx.Resolve<IMvxMessenger>();
+                                                                             messenger.Publish(new ToggleFlyoutMenuMessage(this));
+                                                                         }));
+            NavigationItem.RightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Add,
+                                                                        (delegate
+                                                                        {
+                                                                            //hide MvvmCross navigation bar and show next view
+                                                                            var messenger = Mvx.Resolve<IMvxMessenger>();
+                                                                            messenger.Publish(new NavigationBarHiddenMessage(this, false));
+                                                                            var viewmodel = ViewModel as EnterTimeViewModel;
+                                                                            if (viewmodel != null) viewmodel.ShowFirstView();
+                                                                        }));
         }
-
-        
     }
 }

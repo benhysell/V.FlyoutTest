@@ -37,8 +37,7 @@ namespace V.FlyoutTest.Droid.Views
         {
             inflater.Inflate(Resource.Menu.refresh, menu);
         }
-
-        //xxx use this to react to menu selection, show another screen
+        
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             var viewModel = ViewModel as EnterTimeViewModel;

@@ -1,5 +1,14 @@
 
 ----------------------------------------------------------------------------------------------------
+04 Apr 14 08:32 Add ViewModel and Views
+----------------------------------------------------------------------------------------------------
+
+AddHoursEntryViewModel.cs added to V.FlyoutTest.Core project.
+AddHoursEntryView.cs added to V.FlyoutTest.iOS project.
+AddHoursEntryView.cs added to V.FlyoutTest.Droid project.
+TestAddHoursEntryViewModel.cs added to V.FlyoutTest.Core.Tests project.
+
+----------------------------------------------------------------------------------------------------
 03 Apr 14 15:33 Add ViewModel and Views
 ----------------------------------------------------------------------------------------------------
 

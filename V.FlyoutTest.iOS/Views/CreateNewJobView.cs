@@ -20,17 +20,6 @@ namespace V.FlyoutTest.iOS.Views
     [Register("CreateNewJobView")]
     public class CreateNewJobView : BaseView
     {
-
-        public CreateNewJobView()
-        {
-            this.NavigationItem.LeftBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Pause,
-                                                                         (delegate
-                                                                         {
-                                                                             var messenger = Mvx.Resolve<IMvxMessenger>();
-                                                                             messenger.Publish(new Message(this));                                                                            
-                                                                         }));
-        }
-
         /// <summary>
         /// Views the did load.
         /// </summary>
@@ -43,7 +32,13 @@ namespace V.FlyoutTest.iOS.Views
 
             base.ViewDidLoad();
             Title = "Create New Job";
-
+            this.NavigationItem.LeftBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Pause,
+                                                                        (delegate
+                                                                        {
+                                                                            //message to show the menu
+                                                                            var messenger = Mvx.Resolve<IMvxMessenger>();
+                                                                            messenger.Publish(new ToggleFlyoutMenuMessage(this));
+                                                                        }));
         }
     }
 }

@@ -34,7 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Entities\ToggleFlyoutMenuMessage.cs" />
+    <Compile Include="Entities\NavigationBarHiddenMessage.cs" />
     <Compile Include="Entities\Message.cs" />
+    <Compile Include="ViewModels\AddHoursEntryViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\CreateNewJobViewModel.cs" />
     <Compile Include="ViewModels\EnterTimeViewModel.cs" />

@@ -30,13 +30,20 @@ namespace V.FlyoutTest.iOS.Views
     public class HomeView : BaseView
     {
         FlyoutNavigationController navigation;
-        private MvxSubscriptionToken navigationToken;
+        private MvxSubscriptionToken navigationMenuToggleToken;
+        private MvxSubscriptionToken navigationBarHiddenToken;
 
-       
-        string[] Tasks = {
-			"Enter Time",
-			"Create New Job"			
-		};
+        /// <summary>
+        /// Set bounds for FlyoutNavigation
+        /// </summary>
+        /// <param name="animated"></param>
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+            navigation.View.Frame = UIScreen.MainScreen.Bounds;
+            navigation.View.Bounds = UIScreen.MainScreen.Bounds;
+        }
+
         /// <summary>
         /// Views the did load.
         /// </summary>
@@ -49,62 +56,58 @@ namespace V.FlyoutTest.iOS.Views
             NavigationController.NavigationBarHidden = true;
             Title = "Home";
             this.View = new UIView { BackgroundColor = UIColor.White };
-            
+
             navigation = new FlyoutNavigationController();
-            navigation.View.Frame = UIScreen.MainScreen.Bounds;
-            
-            ////add both view controllers
+
             View.AddSubview(navigation.View);
             this.AddChildViewController(navigation);
 
-            var section = new Section();
-            section.AddAll(from page in Tasks
-                           select new StringElement(page) as Element);
-            var rootElement = new RootElement("");
-            rootElement.Add(section);
-            navigation.NavigationRoot = rootElement;
+            //names of the views shown in the flyout
+            var flyoutMenuElements = new Section();
 
-            var viewControllers = new List<UIViewController>();
+            //views that will be shown when a menu item is selected
+            var flyoutViewControllers = new List<UIViewController>();
+
+
             var homeViewModel = ViewModel as HomeViewModel;
-            foreach (var viewModel2 in homeViewModel.MenuItems)
+            if (homeViewModel != null)
             {
-                MvxViewModelRequest x = new MvxViewModelRequest
+                //create the ViewModels
+                foreach (var viewModel in homeViewModel.MenuItems)
                 {
-                    ViewModelType = viewModel2.ViewModelType
+                    var viewModelRequest = new MvxViewModelRequest
+                    {
+                        ViewModelType = viewModel.ViewModelType
+                    };
+
+                    flyoutViewControllers.Add(CreateMenuItemController(viewModelRequest));
+                    flyoutMenuElements.Add(new StringElement(viewModel.Title));
+                }
+                navigation.ViewControllers = flyoutViewControllers.ToArray();
+
+                //add the menu elements
+                var rootElement = new RootElement("")
+                {
+                    flyoutMenuElements
                 };
+                navigation.NavigationRoot = rootElement;
+            }
 
-                viewControllers.Add(CreateMenuItemController(x));
-            }                       
-            navigation.ViewControllers = viewControllers.ToArray();
-            
-            
+            //Listen to messages to toggle the menu and hide MvvmCrosses navigation bar
             var messenger = Mvx.Resolve<IMvxMessenger>();
-            navigationToken = messenger.SubscribeOnMainThread<Message>(OnNavigationMessage);            
-        }
-        
-       /// <summary>
-       /// Toggle the menu open/close
-       /// </summary>
-       /// <param name="obj"></param>
-        private void OnNavigationMessage(Message obj)
-        {
-            navigation.ToggleMenu();
+            navigationMenuToggleToken = messenger.SubscribeOnMainThread<ToggleFlyoutMenuMessage>(message => navigation.ToggleMenu());
+            navigationBarHiddenToken = messenger.SubscribeOnMainThread<NavigationBarHiddenMessage>(message => NavigationController.NavigationBarHidden = message.NavigationBarHidden);
         }
 
-
-        private UIViewController CreateMenuItemController(MvxViewModelRequest x)        
+        /// <summary>
+        /// Given a ViewModel create a UIViewController for the FlyoutNavigation control
+        /// </summary>
+        /// <param name="viewModelRequest"></param>
+        /// <returns></returns>
+        private UIViewController CreateMenuItemController(MvxViewModelRequest viewModelRequest)
         {
             var controller = new UINavigationController();
-
-            var screen = this.CreateViewControllerFor(x) as UIViewController;
-            controller.PushViewController(screen, false);
-            return controller;
-        }
-
-        private UINavigationController CreateMenuItemController<TViewModel>() where TViewModel : BaseViewModel
-        {
-            var controller = new UINavigationController();            
-            var screen = this.CreateViewControllerFor<TViewModel>() as UIViewController;
+            var screen = this.CreateViewControllerFor(viewModelRequest) as UIViewController;
             controller.PushViewController(screen, false);
             return controller;
         }

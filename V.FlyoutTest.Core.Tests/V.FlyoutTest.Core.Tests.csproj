@@ -65,6 +65,7 @@
     <Compile Include="Mocks\MockDispatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestTrace.cs" />
+    <Compile Include="ViewModels\TestAddHoursEntryViewModel.cs" />
     <Compile Include="ViewModels\TestCreateNewJobViewModel.cs" />
     <Compile Include="ViewModels\TestEnterTimeViewModel.cs" />
     <Compile Include="ViewModels\TestFirstViewModel.cs" />
