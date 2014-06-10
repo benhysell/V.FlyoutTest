@@ -40,8 +40,17 @@
     <Reference Include="Cirrious.MvvmCross">
       <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1\lib\net45\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross.FieldBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.FieldBinding.3.1.1\lib\net45\Cirrious.MvvmCross.FieldBinding.dll</HintPath>
+    </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.FieldBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.FieldBinding.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.FieldBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.MethodBinding">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.MethodBinding.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.MethodBinding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Test.Core">
       <HintPath>..\packages\MvvmCross.HotTuna.Tests.3.1.1\lib\net45\Cirrious.MvvmCross.Test.Core.dll</HintPath>

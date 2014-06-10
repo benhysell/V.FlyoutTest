@@ -7,3 +7,14 @@ C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plug
 C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.csprojResolveAssemblyReference.cache
 C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.dll
 C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.pdb
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\V.FlyoutTest.Core.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\V.FlyoutTest.Core.pdb
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.CrossCore.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.FieldBinding.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plugins.MethodBinding.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.pdb
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.csprojResolveAssemblyReference.cache

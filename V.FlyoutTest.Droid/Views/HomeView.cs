@@ -12,7 +12,9 @@ using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Binding.Droid.Views;
 using Cirrious.MvvmCross.Droid.Fragging;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
+using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
+using V.FlyoutTest.Core.Entities;
 using V.FlyoutTest.Core.ViewModels;
 using V.FlyoutTest.Droid.Helpers;
 
@@ -86,6 +88,9 @@ namespace V.FlyoutTest.Droid.Views
             {
                 this.ViewModel.SelectMenuItemCommand.Execute(this.ViewModel.MenuItems[0]);
             }
+
+            var messenger = Mvx.Resolve<IMvxMessenger>();
+            messenger.Publish(new LoginRequestMessage(this));        
 
         }
 

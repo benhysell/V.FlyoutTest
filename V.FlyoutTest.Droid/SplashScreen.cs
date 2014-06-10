@@ -3,10 +3,13 @@
 //    Defines the SplashScreen type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
+
+using Android.App;
+
 namespace V.FlyoutTest.Droid
 {
-    using Android.App;
-
+    
     using Cirrious.MvvmCross.Droid.Views;
 
     /// <summary> 
