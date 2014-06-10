@@ -94,3 +94,15 @@ V.FlyoutTest.Droid/obj/Debug/V.FlyoutTest.Droid.csproj.FileListAbsolute.txt
 *.cache
 
 *.cache
+
+*.apk
+
+V.FlyoutTest.Droid/bin/Debug/V.FlyoutTest.Droid-Signed.apk
+
+V.FlyoutTest.Droid/bin/Debug/V.FlyoutTest.Droid.apk
+
+V.FlyoutTest.Droid/obj/Debug/android/bin/resources_and_assemblies
+
+*.apk
+
+V.FlyoutTest.Droid/obj/Debug/android/bin/V.FlyoutTest.Droid.apk
