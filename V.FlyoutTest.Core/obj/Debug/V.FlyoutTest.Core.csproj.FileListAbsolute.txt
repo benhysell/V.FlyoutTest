@@ -15,6 +15,6 @@ Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCros
 Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
 Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
 Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plugins.MethodBinding.dll
+Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.csprojResolveAssemblyReference.cache
 Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.dll
 Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.pdb
-Z:\Documents\Projects\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.csprojResolveAssemblyReference.cache
