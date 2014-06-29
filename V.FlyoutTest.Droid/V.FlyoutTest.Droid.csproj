@@ -121,7 +121,6 @@
     <Compile Include="Views\EnterTimeView.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\HomeView.cs" />
-    <Compile Include="Views\LoginView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -138,9 +137,6 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\Layout\AddHoursEntryView.axml" />
-    <AndroidResource Include="Resources\Layout\LoginView.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
@@ -168,7 +164,7 @@
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportv4-18">
       <Visible>False</Visible>
-      <Version>19.1.0</Version>
+      <Version>20.0.0</Version>
     </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

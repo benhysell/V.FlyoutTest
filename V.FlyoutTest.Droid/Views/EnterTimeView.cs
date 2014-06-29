@@ -29,8 +29,7 @@ namespace V.FlyoutTest.Droid.Views
         public override Android.Views.View OnCreateView(Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Android.OS.Bundle savedInstanceState)
         {
             this.HasOptionsMenu = true;
-            var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            var x = ((EnterTimeViewModel) ViewModel).ReloadCommand; //try to grab something from the ViewModel xxx
+            var ignored = base.OnCreateView(inflater, container, savedInstanceState);           
             return this.BindingInflate(Resource.Layout.EnterTimeView, null);
         }
 

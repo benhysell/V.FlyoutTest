@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <summary>
-//    Defines the LoginView type.
+//    Defines the FirstView type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 namespace V.FlyoutTest.iOS.Views
@@ -10,10 +10,10 @@ namespace V.FlyoutTest.iOS.Views
     using MonoTouch.UIKit;
 
     /// <summary>
-    /// Defines the LoginView type.
+    /// Defines the FirstView type.
     /// </summary>
-    [Register("LoginView")]
-    public class LoginView : BaseView
+    [Register("FirstView")]
+    public class FirstView : BaseView
     {
         /// <summary>
         /// Views the did load.
