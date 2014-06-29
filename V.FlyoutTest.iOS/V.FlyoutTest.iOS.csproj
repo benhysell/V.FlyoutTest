@@ -84,6 +84,7 @@
     <Compile Include="Views\BaseView.cs" />
     <Compile Include="Views\CreateNewJobView.cs" />
     <Compile Include="Views\EnterTimeView.cs" />
+    <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\HomeView.cs" />
     <None Include="app.config" />
     <None Include="Info.plist" />

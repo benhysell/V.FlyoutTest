@@ -1,9 +1,0 @@
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\V.FlyoutTest.Core.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\V.FlyoutTest.Core.pdb
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.CrossCore.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.csprojResolveAssemblyReference.cache
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.dll
-C:\Jobs\JobTrak\V.FlyoutTest\V.FlyoutTest.Core\obj\Debug\V.FlyoutTest.Core.pdb

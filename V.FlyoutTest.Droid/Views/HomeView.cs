@@ -12,7 +12,9 @@ using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Binding.Droid.Views;
 using Cirrious.MvvmCross.Droid.Fragging;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
+using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
+using V.FlyoutTest.Core.Entities;
 using V.FlyoutTest.Core.ViewModels;
 using V.FlyoutTest.Droid.Helpers;
 
@@ -86,7 +88,11 @@ namespace V.FlyoutTest.Droid.Views
             {
                 this.ViewModel.SelectMenuItemCommand.Execute(this.ViewModel.MenuItems[0]);
             }
-
+            else
+            {
+                //restore viewModels if we have them
+                RestoreViewModels();
+            }
         }
 
 
@@ -149,7 +155,7 @@ namespace V.FlyoutTest.Droid.Views
                 // TODO - replace this with extension method when available
 
                 //Normally we would do this, but we already have it
-                this.SupportFragmentManager.BeginTransaction().Replace(Resource.Id.content_frame, frag).Commit();
+                this.SupportFragmentManager.BeginTransaction().Replace(Resource.Id.content_frame, frag, title).Commit();
                 this._drawerList.SetItemChecked(this.ViewModel.MenuItems.FindIndex(m => m.Id == (int)section), true);
                 this.ActionBar.Title = this._title = title;
 
@@ -199,6 +205,46 @@ namespace V.FlyoutTest.Droid.Views
                 return true;
 
             return base.OnOptionsItemSelected(item);
-        }       
+        }
+
+        protected override void OnSaveInstanceState(Bundle outState)
+        {
+            SaveViewModelStates();
+            base.OnSaveInstanceState(outState);
+        }
+
+        private void SaveViewModelStates()
+        {
+            //save all of the ViewModels for fragments
+            var view = this.SupportFragmentManager.FindFragmentByTag("Enter Time") as EnterTimeView;
+            if (null != view)
+            {
+                ViewModel.EnterTimeViewModelFragment = view.ViewModel as EnterTimeViewModel;
+            }
+            var view2 = this.SupportFragmentManager.FindFragmentByTag("Create New Job") as CreateNewJobView;
+            if (null != view2)
+            {
+                ViewModel.CreateNewJobViewModelFragment = view2.ViewModel as CreateNewJobViewModel;
+            }            
+        }
+
+        /// <summary>
+        /// Restore view models to fragments if we have them and the fragments were created
+        /// </summary>
+        private void RestoreViewModels()
+        {
+            var loaderService = Mvx.Resolve<IMvxViewModelLoader>();
+            
+            var view = this.SupportFragmentManager.FindFragmentByTag("Enter Time") as EnterTimeView;
+            if (null != view && null == view.ViewModel)
+            {
+                view.ViewModel = ViewModel.EnterTimeViewModelFragment ?? loaderService.LoadViewModel(new MvxViewModelRequest(typeof(EnterTimeViewModel), null, null, null), null) as EnterTimeViewModel;
+            }
+            var view2 = this.SupportFragmentManager.FindFragmentByTag("Create New Job") as CreateNewJobView;
+            if (null != view2 && null == view2.ViewModel)
+            {
+                view2.ViewModel = ViewModel.CreateNewJobViewModelFragment ?? loaderService.LoadViewModel(new MvxViewModelRequest(typeof(CreateNewJobViewModel), null, null, null), null) as CreateNewJobViewModel;
+            }            
+        }
     }
 }

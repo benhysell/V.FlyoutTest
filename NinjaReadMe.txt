@@ -1,5 +1,31 @@
 
 ----------------------------------------------------------------------------------------------------
+16 Jun 14 19:37 Add Projects
+----------------------------------------------------------------------------------------------------
+
+V.FlyoutTest.WindowsPhone project successfully added.
+
+----------------------------------------------------------------------------------------------------
+10 Jun 14 10:19 Add Plugins
+----------------------------------------------------------------------------------------------------
+
+You have opted to implement the plugins via Nuget.
+Please check the Package Management Console for completion of Nuget integration.
+
+FieldBinding plugin added to project V.FlyoutTest.Core.
+MethodBinding plugin added to project V.FlyoutTest.Core.
+FieldBinding plugin added to project V.FlyoutTest.Core.Tests.
+MethodBinding plugin added to project V.FlyoutTest.Core.Tests.
+
+----------------------------------------------------------------------------------------------------
+10 Jun 14 09:54 Add ViewModel and Views
+----------------------------------------------------------------------------------------------------
+
+LoginViewModel.cs added to V.FlyoutTest.Core project.
+LoginView.cs added to V.FlyoutTest.iOS project.
+LoginView.cs added to V.FlyoutTest.Droid project.
+
+----------------------------------------------------------------------------------------------------
 04 Apr 14 08:32 Add ViewModel and Views
 ----------------------------------------------------------------------------------------------------
 
