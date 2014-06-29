@@ -34,9 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Entities\LoginCompleteMessage.cs" />
-    <Compile Include="Entities\LoginFailedMessage.cs" />
-    <Compile Include="Entities\LoginRequestMessage.cs" />
     <Compile Include="Entities\ToggleFlyoutMenuMessage.cs" />
     <Compile Include="Entities\NavigationBarHiddenMessage.cs" />
     <Compile Include="Entities\Message.cs" />

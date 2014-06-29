@@ -16,6 +16,10 @@ namespace V.FlyoutTest.Core.ViewModels
     /// </summary>
     public class HomeViewModel : BaseViewModel
     {
+        //allows us to save state for Android
+        public EnterTimeViewModel EnterTimeViewModelFragment;
+        public CreateNewJobViewModel CreateNewJobViewModelFragment;
+
         public enum Section
         {
             Unknown,
