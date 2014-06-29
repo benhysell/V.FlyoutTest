@@ -1,7 +1,7 @@
 V.FlyoutTest
 ================
 
-MvvmCross unified FlyoutNavigation/Hamburger Menu/Slide Out Menu for iOS, Android, and Windows Phone 8
+MvvmCross unified FlyoutNavigation/Hamburger Menu/Sliding Menu for iOS, Android, and Windows Phone 8
 
 See
 http://benjaminhysell.com/archive/2014/04/mvvmcross-flyoutnavigation-hamburger-menu-sliding-menu-for-android-and-ios/
