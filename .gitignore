@@ -1,8 +1,6 @@
 
 *.info
 
-*.png
-
 *.md
 
 Components/xamandroidsupportv4-18-19.1.0/component/Manifest.xml
@@ -240,3 +238,35 @@ V.FlyoutTest.WindowsPhone/obj/x86/Debug/Views/HomeView.g.cs
 V.FlyoutTest.WindowsPhone/obj/x86/Debug/Views/HomeView.g.i.cs
 
 V.FlyoutTest.WindowsPhone/obj/x86/Debug/XapCacheFile.xml
+
+Components/xamandroidsupportv4-18-20.0.0.png
+
+Components/xamandroidsupportv4-18-20.0.0/component/icons/xamandroidsupportv4-18_512x512.png
+
+Components/xamandroidsupportv4-18-20.0.0/component/icons/xamandroidsupportv4-18_128x128.png
+
+Components/xamandroidsupportv4-18-20.0.0/samples/AndroidSupportSample/AndroidSupportSample/Resources/drawable-hdpi/icon.png
+
+Components/xamandroidsupportv4-18-20.0.0/samples/AndroidSupportSample/AndroidSupportSample/Resources/drawable-ldpi/icon.png
+
+Components/xamandroidsupportv4-18-20.0.0/samples/AndroidSupportSample/AndroidSupportSample/Resources/drawable-mdpi/icon.png
+
+Components/xamandroidsupportv4-18-20.0.0/samples/AndroidSupportSample/AndroidSupportSample/Resources/drawable-xhdpi/icon.png
+
+Components/xamandroidsupportv4-18-20.0.0/samples/AndroidSupportSample/AndroidSupportSample/Resources/drawable-xxhdpi/icon.png
+
+V.FlyoutTest.Droid/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/drawer_shadow_dark.9.png
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/drawer_shadow_light.9.png
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/ic_drawer_dark.png
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/ic_drawer_light.png
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/ic_menu_refresh.png
+
+V.FlyoutTest.Droid/obj/Debug/res/drawable/icon.png
+
+V.FlyoutTest.iOS/obj/iPhone/Debug/DesignTimeResolveAssemblyReferencesInput.cache

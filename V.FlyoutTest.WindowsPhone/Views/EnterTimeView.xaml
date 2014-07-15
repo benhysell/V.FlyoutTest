@@ -35,7 +35,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton Click="ShowMenu" IconUri="/Toolkit.Content/ApplicationBar.Select.png" Text="Menu"/>           
-            <shell:ApplicationBarIconButton Click="AddNewHoursEntry"  IconUri="/Assets/AppBar/add.png" Text="Add Hours"/>
+            <shell:ApplicationBarIconButton Click="AddNewHoursEntry"  IconUri="/Toolkit.Content/ApplicationBar.Add.png" Text="Add Hours"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Click="ShowMenu" Text="Menu"/>                
                 <shell:ApplicationBarMenuItem Click="AddNewHoursEntry" Text="Add Hours Entry"/>

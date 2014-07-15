@@ -148,9 +148,6 @@
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\AppBar\add.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -160,7 +157,7 @@
     <BundleResource Include="Toolkit.Content\ApplicationBar.Delete.png" />
     <BundleResource Include="Toolkit.Content\ApplicationBar.Check.png" />
     <BundleResource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
-    <BundleResource Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
