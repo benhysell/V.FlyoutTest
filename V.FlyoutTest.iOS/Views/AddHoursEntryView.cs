@@ -12,8 +12,8 @@ using System.Linq;
 namespace V.FlyoutTest.iOS.Views
 {
     using Core.ViewModels;
-    using MonoTouch.Foundation;
-    using MonoTouch.UIKit;
+    using Foundation;
+    using UIKit;
 
     /// <summary>
     /// Defines the AddHoursEntryView type.

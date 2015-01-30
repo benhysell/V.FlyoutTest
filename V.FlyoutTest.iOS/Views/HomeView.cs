@@ -6,7 +6,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Drawing;
+using CoreGraphics;
 using System.Linq;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Dialog.Touch;
@@ -20,8 +20,8 @@ using V.FlyoutTest.Core.Entities;
 namespace V.FlyoutTest.iOS.Views
 {
     using Core.ViewModels;
-    using MonoTouch.Foundation;
-    using MonoTouch.UIKit;
+    using Foundation;
+    using UIKit;
 
     /// <summary>
     /// Defines the HomeView type.

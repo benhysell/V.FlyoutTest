@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <summary>
 //    Defines the BaseView type.
 // </summary>
@@ -7,8 +7,8 @@ namespace V.FlyoutTest.iOS.Views
 {
     using Cirrious.MvvmCross.Touch.Views;
 
-    using MonoTouch.Foundation;
-    using MonoTouch.UIKit;
+    using Foundation;
+    using UIKit;
 
     /// <summary>
     /// Defines the BaseView type.

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyoutNavigationSample", "FlyoutNavigationSample\FlyoutNavigationSample.csproj", "{AAA188F1-E969-4095-BC66-59717D7638BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Debug|iPhone.Build.0 = Debug|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Release|iPhone.ActiveCfg = Release|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Release|iPhone.Build.0 = Release|iPhone
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{AAA188F1-E969-4095-BC66-59717D7638BB}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = FlyoutNavigationSample\FlyoutNavigationSample.csproj
+	EndGlobalSection
+EndGlobal

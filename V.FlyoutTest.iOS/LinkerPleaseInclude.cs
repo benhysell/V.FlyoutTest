@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <summary>
 //    Defines the LinkerPleaseInclude type.
 // </summary>
@@ -9,7 +9,7 @@ namespace V.FlyoutTest.iOS
     using System.Collections.Specialized;
     using System.Windows.Input;
 
-    using MonoTouch.UIKit;
+    using UIKit;
 
     /// <summary>
     /// Defines the LinkerPleaseInclude type.
@@ -81,7 +81,7 @@ namespace V.FlyoutTest.iOS
         public void Include(UIDatePicker uiDatePicker)
         {
             uiDatePicker.Date = uiDatePicker.Date.AddSeconds(1);
-            uiDatePicker.ValueChanged += (sender, args) => { uiDatePicker.Date = DateTime.MaxValue; };
+			uiDatePicker.ValueChanged += (sender, args) => { uiDatePicker.Date = Foundation.NSDate.DistantFuture; };
         }
 
         /// <summary>
